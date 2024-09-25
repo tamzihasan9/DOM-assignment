@@ -1,9 +1,5 @@
  
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+ 
 
 body {
     font-family: Arial, sans-serif;
@@ -22,14 +18,26 @@ header {
     
      
 }
+#current-donation-amount{
+    visibility: visible;
+
+}
+.nav-center 
+      {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse; /* This line reverses the order */
+   
+}
 
 .nav-left {
     margin-left: 20px;
+  
 }
 
 .nav-right {
-    display: flex;
-    align-items: center;
+    
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -50,7 +58,7 @@ header {
 
 .donate {
     display: flex;
-    align-items: center;
+ justify-content: center;
     margin-right: 30px;
 }
 
@@ -93,14 +101,14 @@ header {
     background-color: #fff;
     border: 2px solid #B3F54A;
 }
- 
+/*  
 .amount {
     display: flex;
-    align-items: center;
+    align-items: end;
     font-size: 18px;
     font-weight: bold;
     color: #f5a623;
-}
+} */
 
 .coin-icon {
     width: 20px; 
@@ -213,8 +221,13 @@ input[type="number"] {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    
     width: 520px;
     height: 370px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .close {
@@ -244,6 +257,9 @@ input[type="number"] {
     top: 0;
     background-color:#28a745;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
 }
 
  

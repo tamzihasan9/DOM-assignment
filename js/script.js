@@ -25,6 +25,8 @@ function toggleActive(button) {
         button.classList.add('active');
     }
 }
+
+
  
 
 
@@ -56,7 +58,24 @@ function validateDonationAmount(amount) {
 
   return true;
 }
+// ... rest of your JavaScript code
 
+// Function to update the current donation amount
+function updateCurrentDonationAmount(amount) {
+    const currentDonationAmountElement = document.getElementById('current-donation-amount');
+    currentDonationAmountElement.textContent = `$${amount}`;
+}
+
+// Function to handle the "Donate Now" button click
+function handleDonateClick(index) {
+    // ... rest of your donation handling logic
+
+    // Update the current donation amount
+    const donationAmount = parseInt(amountInputs[index].value);
+    updateCurrentDonationAmount(donationAmount);
+}
+
+// ... rest of your JavaScript code
  
 function handleDonateClick(index) {
   const amountInput = amountInputs[index];

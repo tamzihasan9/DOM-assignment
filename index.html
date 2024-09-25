@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header id="navbar">
         <div class="nav-left">
             <button class="btn blog-btn" onclick="navigateToBlog()">Blog</button>
         </div>
@@ -67,7 +67,7 @@
 
                         <div class="donation-title">Feed the Hungry</div>
                         <div class="donation-info">Provide meals to families and individuals struggling with hunger.</div>
-                        <div class="current-amount">Current donation: $500</div>
+                        <div class="current-amount">Current donation:<span id="current-donation-amount">$100</span></div>
                         <div class="card_footer">
                             <input type="number" id="amount3" min="1" placeholder="Amount"  >
                             <button class="donate-btn" onclick="donate(3)">Donate Now</button>
