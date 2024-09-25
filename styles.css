@@ -1,0 +1,303 @@
+ /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    
+    
+    
+     
+}
+
+.nav-left {
+    margin-left: 20px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn {
+    background-color: #B3F54A;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.blog-btn {
+    background-color: #B3F54A;
+}
+
+.donate {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.donate-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.amount {
+    display: flex;
+    align-items: flex-end;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f5a623;
+}
+
+/* Tabs Section */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* .tab-btn {
+    background-color: #B3F54A;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px;
+    color:black;
+}
+
+.tab-btn.active {
+    background-color: #B3F54A;
+} */
+.tab-btn {
+    background-color: #f0f0f0 ;
+     border-radius: 5px;
+    padding: 15px 12px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.tab-btn.active {
+    background-color: #008000; /* Green color */
+    color: #fff;
+}
+
+/* .tab-btn:not(.active) {
+    background-color: #fff;
+    border: 2px solid #B3F54A;
+} */
+ 
+.amount {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f5a623;
+}
+
+.coin-icon {
+    width: 20px; /* Adjust the size of the icon */
+    height: 20px;
+    margin-right: 8px; /* Add some space between the icon and the text */
+}
+/* Rest of the styles here */
+
+/* Donation Button */
+.donate-btn {
+    background-color: #B3F54A;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    color: white;
+}
+
+/* History Section */
+#history-section {
+    margin-top: 30px;
+}
+.balance {
+    color: white;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.donation-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 20px;
+    width:1140px;
+    height: 450px;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.donation-card img {
+    width:150px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.donation-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.donation-info {
+    margin: 10px 0;
+    color: #555;
+}
+
+.current-amount {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.donate-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#history-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 520px;
+    height: 370px;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+.Donation_img{
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Fixed height to create a rectangular shape */
+    object-fit: cover; /* Crops the image to fit the rectangle, while keeping its aspect ratio */
+    display: block; /* Remove inline spacing */
+    border-radius: 10px 10px 0 0; /* Optional: round the top corners */
+}
+.card_footer{
+    display: flex;
+     flex-direction: column;
+}
+.card-content{
+ padding: 50px;
+ justify-items: end;
+}
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color:#28a745;
+    z-index: 1;
+}
+
+/* .tab-btn.active {
+    
+        background-color: #f0f0f0;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .tab-btn.active {
+        background-color: #008000; /* Green color */
+        /* color: #fff; */
+    /* } */ */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+li strong {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 20px; /* Indent paragraphs */
+}

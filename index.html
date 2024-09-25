@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <button class="btn blog-btn" onclick="navigateToBlog()">Blog</button>
+        </div>
+        <div class="nav-center">
+            <div class="donate">
+                <img src="assets/logo.png" alt="Donate Icon" class="donate-icon">
+                <span>Donate Bangladesh</span>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="amount">
+                <img src="assets/coin.png" alt="Coin Icon" class="coin-icon">
+                <span id="bdt-amount">5500 BDT</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showDonation()">Donation</button>
+            <button class="tab-btn" onclick="showHistory()">History</button>
+        </div>
+
+        <div id="donation-section">
+            <div class="card-container">
+                <div class="donation-card">
+                    <img class="Donation_img" src="assets/noakhali.png" alt="Donation 1">
+                    <div class="card-content">
+                        <div class="donation-title">Save the Children</div>
+                        <div class="donation-info">Help provide education and healthcare for children in need.</div>
+                        <div class="current-amount">Current donation: $100</div>
+                        <div class="card_footer">
+                            <input type="number" id="amount1" min="1" placeholder="Amount">
+                            <button class="donate-btn" onclick="donate(1)">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="donation-card">
+                    <img class="Donation_img" src="https://via.placeholder.com/80" alt="Donation 2">
+                    <div class="card-content">
+                        <div class="donation-title">Plant a Tree</div>
+                        <div class="donation-info">Contribute to reforestation projects across the world.</div>
+                        <div class="current-amount">Current donation: $250</div>
+                        <div class="card_footer">
+                            <input type="number" id="amount2" min="1" placeholder="Amount">
+                            <button class="donate-btn" onclick="donate(2)">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="donation-card">
+                    <img class="Donation_img" src="https://via.placeholder.com/80" alt="Donation 3">
+                    <div class="card-content">
+                        <div class="donation-title">Feed the Hungry</div>
+                        <div class="donation-info">Provide meals to families and individuals struggling with hunger.</div>
+                        <div class="current-amount">Current donation: $500</div>
+                        <div class="card_footer">
+                            <input type="number" id="amount3" min="1" placeholder="Amount">
+                            <button class="donate-btn" onclick="donate(3)">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="history-section" style="display: none;">
+            <h2>Donation History</h2>
+            <ul id="history-list"></ul>
+        </div>
+
+        <div id="modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p id="modal-message"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+      <script src="js/script.js"></script>
+</body>
+</html>
