@@ -1,4 +1,4 @@
- 
+// Get elements from the DOM
 const donationSection = document.getElementById('donation-section');
 const historySection = document.getElementById('history-section');
 const donateButtons = document.querySelectorAll('.donate-btn');
@@ -8,7 +8,7 @@ const historyList = document.getElementById('history-list');
 const modal = document.getElementById('modal');
 const modalMessage = document.getElementById('modal-message');
 
- 
+// Global variables
 let accountBalance = 5500;  
 let transactionHistory = [];
 

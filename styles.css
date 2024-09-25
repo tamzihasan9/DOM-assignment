@@ -1,4 +1,4 @@
- /* General Reset */
+ 
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Header Styles */
+ 
 header {
     display: flex;
     justify-content: space-between;
@@ -68,27 +68,14 @@ header {
     color: #f5a623;
 }
 
-/* Tabs Section */
+ 
 .tabs {
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
 
-/* .tab-btn {
-    background-color: #B3F54A;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-right: 10px;
-    color:black;
-}
-
-.tab-btn.active {
-    background-color: #B3F54A;
-} */
+ 
 .tab-btn {
     background-color: #f0f0f0 ;
      border-radius: 5px;
@@ -98,7 +85,7 @@ header {
 }
 
 .tab-btn.active {
-    background-color: #008000; /* Green color */
+    background-color: #008000;  
     color: #fff;
 }
 
@@ -116,13 +103,11 @@ header {
 }
 
 .coin-icon {
-    width: 20px; /* Adjust the size of the icon */
+    width: 20px; 
     height: 20px;
-    margin-right: 8px; /* Add some space between the icon and the text */
+    margin-right: 8px;  
 }
-/* Rest of the styles here */
-
-/* Donation Button */
+ 
 .donate-btn {
     background-color: #B3F54A;
     border: none;
@@ -134,7 +119,7 @@ header {
     color: white;
 }
 
-/* History Section */
+ 
 #history-section {
     margin-top: 30px;
 }
@@ -237,12 +222,14 @@ input[type="number"] {
     font-size: 24px;
     cursor: pointer;
 }
+input[type="number"] {
+    width: 200px; /* Adjust the width as needed */
+}
 .Donation_img{
-    width: 100%; /* Full width of the card */
-    height: 200px; /* Fixed height to create a rectangular shape */
-    object-fit: cover; /* Crops the image to fit the rectangle, while keeping its aspect ratio */
-    display: block; /* Remove inline spacing */
-    border-radius: 10px 10px 0 0; /* Optional: round the top corners */
+    width: 100%;  
+    height: 200px; 
+    object-fit: cover;  
+    border-radius: 1px 1px 0 0;  
 }
 .card_footer{
     display: flex;
@@ -259,20 +246,7 @@ input[type="number"] {
     z-index: 1;
 }
 
-/* .tab-btn.active {
-    
-        background-color: #f0f0f0;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        margin-right: 10px;
-    }
-    
-    .tab-btn.active {
-        background-color: #008000; /* Green color */
-        /* color: #fff; */
-    /* } */ */
-
+ 
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -299,5 +273,5 @@ li strong {
 }
 
 p {
-    margin-top: 20px; /* Indent paragraphs */
+    margin-top: 20px;  
 }
