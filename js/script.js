@@ -1,4 +1,4 @@
-// Get elements from the DOM
+ 
 const donationSection = document.getElementById('donation-section');
 const historySection = document.getElementById('history-section');
 const donateButtons = document.querySelectorAll('.donate-btn');
@@ -8,16 +8,16 @@ const historyList = document.getElementById('history-list');
 const modal = document.getElementById('modal');
 const modalMessage = document.getElementById('modal-message');
 
-// Global variables
-let accountBalance = 5500; // Initial account balance
+ 
+let accountBalance = 5500;  
 let transactionHistory = [];
 
-// Function to update the account balance and BDT amount
+ 
 function updateAccountBalance(amount) {
   accountBalance -= amount;
   bdtAmountElement.textContent = `${accountBalance} BDT`;
 }
-// Function to toggle active status of buttons
+ 
 function toggleActive(button) {
     const activeButton = document.querySelector('.tab-btn.active');
     if (activeButton !== button) {
@@ -25,24 +25,10 @@ function toggleActive(button) {
         button.classList.add('active');
     }
 }
-
-// Function to show or hide sections
-// function showSection(sectionToShow, sectionToHide) {
-//     sectionToShow.style.display = 'block';
-//     sectionToHide.style.display = 'none';
-//     toggleActive(document.querySelector(`button[onclick="showSection('${sectionToShow.id}', '${sectionToHide.id}')"]`));
-// }
-document.querySelector('.tab-btn.active').addEventListener('click', () => {
-    toggleActive(this);
-    showSection('donation-section', 'history-section');
-});
-document.querySelector('.tab-btn:not(.active)').addEventListener('click', () => {
-    toggleActive(this);
-    showSection('history-section', 'donation-section');
-});
+ 
 
 
-// Function to add a transaction to the history
+ 
 function addToHistory(date, amount, donationName) {
   const li = document.createElement('li');
   li.textContent = `${date} - ${amount} BDT - ${donationName}`;
@@ -50,13 +36,13 @@ function addToHistory(date, amount, donationName) {
   transactionHistory.push({ date, amount, donationName });
 }
 
-// Function to show or hide the donation or history section
+ 
 function showSection(sectionToShow, sectionToHide) {
   sectionToShow.style.display = 'block';
   sectionToHide.style.display = 'none';
 }
 
-// Function to validate the donation amount
+ 
 function validateDonationAmount(amount) {
   if (amount > accountBalance) {
     alert('Donation amount cannot be greater than your account balance.');
@@ -71,7 +57,7 @@ function validateDonationAmount(amount) {
   return true;
 }
 
-// Function to handle the "Donate Now" button click
+ 
 function handleDonateClick(index) {
   const amountInput = amountInputs[index];
   const donationAmount = parseInt(amountInput.value);
@@ -86,21 +72,21 @@ function handleDonateClick(index) {
   }
 }
 
-// Function to show a success message
+ 
 function showSuccessMessage(message) {
   modalMessage.textContent = message;
   modal.style.display = 'block';
 }
 function navigateToBlog() {
-    window.location.href = "blog.html"; // Replace "blog.html" with the actual path to your blog file
+    window.location.href = "blog.html";  
 }
 
-// Function to close the modal
+ 
 function closeModal() {
   modal.style.display = 'none';
 }
 
-// Event listeners for the "Donation" and "History" buttons
+ 
 document.querySelector('.tab-btn.active').addEventListener('click', () => {
   showSection(donationSection, historySection);
 });
@@ -108,10 +94,10 @@ document.querySelector('.tab-btn:not(.active)').addEventListener('click', () => 
   showSection(historySection, donationSection);
 });
 
-// Event listeners for the "Donate Now" buttons
+ 
 donateButtons.forEach((button, index) => {
   button.addEventListener('click', () => handleDonateClick(index));
 });
 
-// Initial display of the donation section
+ 
 showSection(donationSection, historySection);

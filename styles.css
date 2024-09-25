@@ -92,7 +92,7 @@ header {
 .tab-btn {
     background-color: #f0f0f0 ;
      border-radius: 5px;
-    padding: 15px 12px;
+    padding: 10px 12px;
     cursor: pointer;
     margin-right: 10px;
 }
@@ -102,10 +102,10 @@ header {
     color: #fff;
 }
 
-/* .tab-btn:not(.active) {
+.tab-btn:not(.active) {
     background-color: #fff;
     border: 2px solid #B3F54A;
-} */
+}
  
 .amount {
     display: flex;
