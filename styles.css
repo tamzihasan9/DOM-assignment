@@ -100,16 +100,7 @@ header {
 .tab-btn:not(.active) {
     background-color: #fff;
     border: 2px solid #B3F54A;
-}
-/*  
-.amount {
-    display: flex;
-    align-items: end;
-    font-size: 18px;
-    font-weight: bold;
-    color: #f5a623;
-} */
-
+} 
 .coin-icon {
     width: 20px; 
     height: 20px;

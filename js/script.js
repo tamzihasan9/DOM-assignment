@@ -7,7 +7,7 @@ const bdtAmountElement = document.getElementById('bdt-amount');
 const historyList = document.getElementById('history-list');
 const modal = document.getElementById('modal');
 const modalMessage = document.getElementById('modal-message');
-
+const currentDonationAmountElement =document.getElementById('current-donation-amount');
 // Global variables
 let accountBalance = 5500;  
 let transactionHistory = [];
@@ -60,20 +60,20 @@ function validateDonationAmount(amount) {
 }
 // ... rest of your JavaScript code
 
-// Function to update the current donation amount
-function updateCurrentDonationAmount(amount) {
-    const currentDonationAmountElement = document.getElementById('current-donation-amount');
-    currentDonationAmountElement.textContent = `$${amount}`;
-}
+// // Function to update the current donation amount
+// function updateCurrentDonationAmount(amount) {
+//     const currentDonationAmountElement = document.getElementById('current-donation-amount');
+//     currentDonationAmountElement.textContent = `$${amount}`;
+// }
 
-// Function to handle the "Donate Now" button click
-function handleDonateClick(index) {
-    // ... rest of your donation handling logic
+// // Function to handle the "Donate Now" button click
+// function handleDonateClick(index) {
+//     // ... rest of your donation handling logic
 
-    // Update the current donation amount
-    const donationAmount = parseInt(amountInputs[index].value);
-    updateCurrentDonationAmount(donationAmount);
-}
+//     // Update the current donation amount
+//     const donationAmount = parseInt(amountInputs[index].value);
+//     updateCurrentDonationAmount(donationAmount);
+// }
 
 // ... rest of your JavaScript code
  
